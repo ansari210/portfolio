@@ -10,14 +10,13 @@ const Whatsapp = () => {
   const router = useRouter();
 
   const handleClick = async () => {
-
-    // Check if WhatApp installed, if yes open whatsapp else open whatsapp web
-
-    if (navigator.userAgent.includes('WhatsApp')) {
-      // WhatsApp is installed
+    const isMobile = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
+  
+    if (isMobile) {
+ 
       window.open(`whatsapp://send?phone=6395945304`)
     } else {
-      // WhatsApp is not installed, open WhatsApp Web
+
       window.open('https://web.whatsapp.com/send?phone=6395945304', '_blank');
     }
   }
