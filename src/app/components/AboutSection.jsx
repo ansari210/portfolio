@@ -39,6 +39,18 @@ const TAB_DATA = [
       </ul>
     ),
   },
+  {
+    title: "Company",
+    id: "company",
+    content: (
+      <ul className="list-disc pl-2">
+        <li>Coforge Noida 63 (on-site) <span className="text-[#ca6e6e]">* Role:</span> Software Tester</li>
+        <li>Epic Global Digital Solution Noida 63 (on-site) <span className="text-[#ca6e6e]">* Role:</span> Software Developer</li>
+        <li>Adia Business Solution Mumbai (remote) <span className="text-[#ca6e6e]">* Role:</span> MERN Stack Developer</li>
+    
+      </ul>
+    ),
+  },
 ];
 
 const AboutSection = () => {
@@ -86,6 +98,13 @@ const AboutSection = () => {
             >
               {" "}
               Certifications{" "}
+            </TabButton>
+            <TabButton
+              selectTab={() => handleTabChange("company")}
+              active={tab === "company"}
+            >
+              {" "}
+              Company{" "}
             </TabButton>
           </div>
           <div className="mt-8">

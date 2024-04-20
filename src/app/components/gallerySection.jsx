@@ -20,7 +20,7 @@ const GallerySection = () => {
         Gallery
       </h2>
       <div className="text-white flex flex-row justify-center items-center gap-2 py-6">
-      {gallerydata?.map((item)=>{
+      {/* {gallerydata?.map((item)=>{
           return(
             <>
             <ProjectTag
@@ -30,7 +30,7 @@ const GallerySection = () => {
           />
             </>
           )
-        })}
+        })} */}
    </div>
       <ul ref={ref} className="w-100">
       <ImageGallery images={gallerydata?.[0].epicglobal} />
